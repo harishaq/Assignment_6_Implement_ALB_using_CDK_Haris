@@ -1,0 +1,275 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "Assignment5CdkAlbStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "Assignment5CdkAlbStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "Assignment5CdkAlbStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "Assignment5CdkAlbStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/e403bca4bd1279db468fccf1f359fa800e0de9bb79d652b1e3d9821def0f955a.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "Assignment5CdkAlbStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "Assignment5CdkAlbStack.assets"
+      ],
+      "metadata": {
+        "/Assignment5CdkAlbStack/EngineeringVpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpc72B2596A"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringVpc/PublicSubnet1Subnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpcPublicSubnet1Subnet1Subnet7944C614"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringVpc/PublicSubnet1Subnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpcPublicSubnet1Subnet1RouteTable9F732811"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringVpc/PublicSubnet1Subnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpcPublicSubnet1Subnet1RouteTableAssociationF0189A9E"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringVpc/PublicSubnet1Subnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpcPublicSubnet1Subnet1DefaultRoute934184C2"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringVpc/PublicSubnet1Subnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpcPublicSubnet1Subnet2Subnet22D16B9F"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringVpc/PublicSubnet1Subnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpcPublicSubnet1Subnet2RouteTable9C14D674"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringVpc/PublicSubnet1Subnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpcPublicSubnet1Subnet2RouteTableAssociationEA818DDF"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringVpc/PublicSubnet1Subnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpcPublicSubnet1Subnet2DefaultRoute37459D04"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringVpc/PublicSubnet2Subnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpcPublicSubnet2Subnet1SubnetBBA9B8DA"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringVpc/PublicSubnet2Subnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpcPublicSubnet2Subnet1RouteTableC8BBDB8E"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringVpc/PublicSubnet2Subnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpcPublicSubnet2Subnet1RouteTableAssociationCF6D18A0"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringVpc/PublicSubnet2Subnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpcPublicSubnet2Subnet1DefaultRoute94B697F8"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringVpc/PublicSubnet2Subnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpcPublicSubnet2Subnet2Subnet3D94DA12"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringVpc/PublicSubnet2Subnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpcPublicSubnet2Subnet2RouteTable29833B99"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringVpc/PublicSubnet2Subnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpcPublicSubnet2Subnet2RouteTableAssociation8A94F970"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringVpc/PublicSubnet2Subnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpcPublicSubnet2Subnet2DefaultRoute623A3F45"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringVpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpcIGWB47AB1A3"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringVpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpcVPCGW4A6A6B47"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringVpc/RestrictDefaultSecurityGroupCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringVpcRestrictDefaultSecurityGroupCustomResourceD2CE7C45"
+          }
+        ],
+        "/Assignment5CdkAlbStack/Custom::VpcRestrictDefaultSGCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomVpcRestrictDefaultSGCustomResourceProviderRole26592FE0"
+          }
+        ],
+        "/Assignment5CdkAlbStack/Custom::VpcRestrictDefaultSGCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomVpcRestrictDefaultSGCustomResourceProviderHandlerDC833E5E"
+          }
+        ],
+        "/Assignment5CdkAlbStack/WebServerSG/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebServerSG4D0F372C"
+          }
+        ],
+        "/Assignment5CdkAlbStack/WebInstanceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebInstanceRole7E7D0E48"
+          }
+        ],
+        "/Assignment5CdkAlbStack/WebInstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebInstanceProfile"
+          }
+        ],
+        "/Assignment5CdkAlbStack/web1/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "web1InstanceProfile2B194F4D"
+          }
+        ],
+        "/Assignment5CdkAlbStack/web1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "web1F1E86AD8"
+          }
+        ],
+        "/Assignment5CdkAlbStack/SsmParameterValue:--aws--service--ami-amazon-linux-latest--amzn2-ami-hvm-x86_64-gp2:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmx8664gp2C96584B6F00A464EAD1953AFF4B05118Parameter"
+          }
+        ],
+        "/Assignment5CdkAlbStack/web2/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "web2InstanceProfile149FDA7B"
+          }
+        ],
+        "/Assignment5CdkAlbStack/web2/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "web21D08B09E"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringLB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringLB670590E5"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringLB/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringLBSecurityGroupF425D2CF"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringLB/Listener/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringLBListener2DEE07B0"
+          }
+        ],
+        "/Assignment5CdkAlbStack/EngineeringLB/Listener/TargetGroupGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EngineeringLBListenerTargetGroupGroupB682A6AC"
+          }
+        ],
+        "/Assignment5CdkAlbStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/Assignment5CdkAlbStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/Assignment5CdkAlbStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/Assignment5CdkAlbStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "Assignment5CdkAlbStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
